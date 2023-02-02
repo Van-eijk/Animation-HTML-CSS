@@ -10,11 +10,30 @@
 </head>
 <body>
     <h1>ANIMATION CSS</h1>
+    <div class="btn">
+        <button id="start" onclick="startAnimation()">Start</button>
+        <button id="stop" onclick="stopAnimation()">Stop</button>
+
+    </div>
     <div id="main">
         <div id="box-anim">
            <!-- La boule -->   
         </div>
 
     </div>
+
+    <script>
+        let boulle = document.getElementById("box-anim");
+
+        function startAnimation(){
+           boulle.classList.add("start-animation");
+        }
+
+        function stopAnimation(){
+            boulle.classList.remove("start-animation");
+        }
+
+
+    </script>
 </body>
 </html>

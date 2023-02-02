@@ -12,6 +12,10 @@ body{
     justify-content: center;
 }
 
+h1{
+    margin: 0px 0px;
+}
+
 #main{
    border: 4px solid blueviolet;
    border-radius: 55px;
@@ -31,10 +35,31 @@ body{
     width: 100px;
     border-radius: 50%;
 
-    /* On appelle l'animation */
-    animation: move 3s infinite;
-
 }
 
+.btn{
+    display: flex;
+}
+
+button{
+    margin: 5px;
+    font-weight: bold;
+    font-size: larger;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+#start{
+    background-color: green;
+}
+
+#stop{
+    background-color: red;
+}
+
+.start-animation{
+    animation: move 3s infinite;
+}
 
 
